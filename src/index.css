@@ -1,0 +1,26 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@keyframes imgUp {
+  to {
+    transform: translateY(-10px);
+  }
+}
+@layer utilities{
+.brands {
+  @apply animate-[imgUp_0.7s_linear_infinite_alternate] m-[1rem] h-[10rem] w-[10rem] bg-white rounded-[50%] flex flex-col items-center justify-center text-black cursor-pointer transition-[all_0.5s] hover:invert-[1];
+}
+  .bg-star {
+    @apply bg-[url('./assets/1.png')]
+  }
+  h1{
+    @apply text-2xl font-bold
+  }
+}
+
+  
